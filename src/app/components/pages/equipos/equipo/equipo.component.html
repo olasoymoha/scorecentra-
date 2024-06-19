@@ -1,0 +1,50 @@
+@if (equipo) {
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="d-flex justify-content-between text-center">
+            <button mat-raised-button color="primary" (click)="volver()">Volver</button>
+            <h1>Sección de equipo</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center bg-oscuro align-items-center p-5">
+        <div class="col-lg-8">
+            <h1 class="text-left">{{ equipo.Team.Name }}</h1>
+            <div class="info-container">
+                <p class="d-flex align-items-center gap-2"><mat-icon>location_city</mat-icon> <strong>Ciudad:</strong>
+                    {{ equipo.Team.City }}</p>
+                <p class="d-flex align-items-center gap-2"><mat-icon>location_on</mat-icon> <strong>Dirección:</strong>
+                    {{ equipo.Team.Address }}</p>
+                <p class="d-flex align-items-center gap-2"><mat-icon>local_post_office</mat-icon> <strong>Código
+                        Postal:</strong> {{ equipo.Team.Zip }}</p>
+                <p class="d-flex align-items-center gap-2"><mat-icon>phone</mat-icon> <strong>Teléfono:</strong> {{
+                    equipo.Team.Phone }}</p>
+                <p class="d-flex align-items-center gap-2"><mat-icon>email</mat-icon> <strong>Correo
+                        Electrónico:</strong> {{ equipo.Team.Email }}</p>
+                <p class="d-flex align-items-center gap-2"><mat-icon>event</mat-icon> <strong>Fundado:</strong> {{
+                    equipo.Team.Founded }}</p>
+                <p class="d-flex align-items-center gap-2"><strong>Colores del Club:</strong> {{ equipo.Team.ClubColor1
+                    }}, {{ equipo.Team.ClubColor2 }}, {{ equipo.Team.ClubColor3 }}</p>
+                <p class="d-flex align-items-center gap-2"><strong>Apodos:</strong> {{ equipo.Team.Nickname1 }}, {{
+                    equipo.Team.Nickname2 }}, {{ equipo.Team.Nickname3 }}</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-3 mt-lg-0 text-lg-right">
+            <img src="{{ equipo.Team.WikipediaLogoUrl }}" alt="Escudo" class="img-fluid logo">
+            @if (equipo.Team.WikipediaWordMarkUrl) {
+            <img src="{{ equipo.Team.WikipediaWordMarkUrl }}" alt="Marca de Palabra Wikipedia"
+                class="img-fluid logo mt-3">
+            }
+        </div>
+    </div>
+</div>
+} @else {
+<div class="container mt-5 mb-5">
+    
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <h1>El equipo que buscas no existe.</h1>
+            <button class="w-100" mat-raised-button color="primary" (click)="volver()">Volver</button>
+        </div>
+    </div>
+</div>
+}

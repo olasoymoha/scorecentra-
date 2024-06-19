@@ -1,0 +1,51 @@
+.tabla-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    table-layout: auto;
+}
+
+.mat-mdc-form-field {
+    width: 100%;
+}
+
+td,
+th {
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+@media (max-width: 950px) {
+    .mat-table-responsive {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .mat-table-responsive table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .mat-table-responsive th,
+    .mat-table-responsive td {
+        padding: 8px;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .mat-table-responsive th.mat-header-cell,
+    .mat-table-responsive td.mat-cell {
+        display: block;
+    }
+
+    .mat-table-responsive th.mat-header-cell {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+}

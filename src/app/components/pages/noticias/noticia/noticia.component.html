@@ -1,0 +1,34 @@
+@if ( noticia) {
+<div class="container bg-oscuro p-5 mt-5 mb-5">
+    <div class="encabezado">
+        <p class="fs-4 fw-bold lh-base">{{noticia.titulo}}</p>
+        <p class="fs-6 fst-italic">{{noticia.subtitulo}}</p>
+    </div>
+    <hr>
+
+    <div class="cuerpo lh-base">
+        <div class="imagen">
+            <img src="{{noticia.imagen}}" class="img-fluid" alt="{{noticia.titulo}}">
+            <div class="fuente d-flex justify-content-between">
+                <div class="info-autor d-flex gap-2">
+                    <p class="fs-6 fw-lighter">{{noticia.autor}}</p>
+                    <p class="fs-6 fw-lighter">{{noticia.fecha}}</p>
+                </div>
+                <div class="info-fuente">
+                    <a class="text-light" href="{{noticia.linkFuente}}" target="_blank" ><p class="fs-6 fw-lighter">Fuente: {{noticia.fuente}}</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="descripcion">
+            <p class="fs-6">{{noticia.descripcion}}</p>
+            <button mat-raised-button color="primary" class="mt-2 w-100" (click)="volver()">Volver</button>
+        </div>
+    </div>
+</div>
+} @else {
+<div class="container p-4 bg-oscuro mt-5 mb-5">
+    <p>Noticia no encontrada</p>
+    <button mat-raised-button color="primary" class="mt-2 w-100" (click)="volver()">Volver</button>
+</div>
+}

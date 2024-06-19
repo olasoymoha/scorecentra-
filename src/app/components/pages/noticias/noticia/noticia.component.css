@@ -1,0 +1,46 @@
+.imagen {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .cuerpo {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .imagen {
+        width: 60%;
+    }
+
+    .imagen img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .descripcion {
+        width: 100%;
+        line-height: 2;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .fuente {
+        display: flex;
+    }
+
+    .img-fluid {
+        width: 40%;
+    }
+}

@@ -1,0 +1,41 @@
+[
+    {
+        "SeasonTeamId": 13027,
+        "SeasonId": 275,
+        "TeamId": 554,
+        "TeamName": "Club Atlético de Madrid",
+        "Active": true,
+        "Gender": "Male",
+        "Type": "Club",
+        "Team": {
+            "TeamId": 554,
+            "AreaId": 176,
+            "VenueId": 1003,
+            "Key": "ATM",
+            "Name": "Club Atlético de Madrid",
+            "FullName": "Club Atlético de Madrid",
+            "Active": true,
+            "AreaName": "Spain",
+            "VenueName": "Estadio Cívitas Metropolitano",
+            "Gender": "Male",
+            "Type": "Club",
+            "Address": "Paseo Virgen del Puerto, 67",
+            "City": "Madrid",
+            "Zip": "28005",
+            "Phone": "+34 (913) 669048",
+            "Fax": "+34 (913) 641722",
+            "Website": "http://www.clubatleticodemadrid.com",
+            "Email": "comunicacion@clubatleticodemadrid.com",
+            "Founded": 1903,
+            "ClubColor1": "Red",
+            "ClubColor2": "White",
+            "ClubColor3": "Blue",
+            "Nickname1": "Los Colchoneros",
+            "Nickname2": "Los Rojiblancos",
+            "Nickname3": "Los Indios",
+            "WikipediaLogoUrl": "https://upload.wikimedia.org/wikipedia/en/f/f4/Atletico_Madrid_2017_logo.svg",
+            "WikipediaWordMarkUrl": null,
+            "GlobalTeamId": 90000554
+        }
+    }
+]

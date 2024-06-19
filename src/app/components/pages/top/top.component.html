@@ -1,0 +1,43 @@
+<h1 class="text-center mt-5">Máximos Goleadores</h1>
+
+<div class="goleadores-container bg-oscuro p-5">
+    @for (topGoleador of listGoleadores; track $index) {
+    <div class="goleador">
+        <div class="imagen">
+            <div class="imgg">
+                <img [src]="topGoleador.imageUrl" alt="{{topGoleador.name}}">
+            </div>
+            <div class="overlay">
+                <div class="info">
+                    <h2>{{topGoleador.name}}</h2>
+                    <hr>
+                    <p><span class="material-icons">home</span>{{topGoleador.team}}</p>
+                    <p><span class="material-icons">sports_soccer</span>{{topGoleador.totalGoles}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+</div>
+
+<h1 class="text-center mt-5">Máximos asistidores</h1>
+
+<div class="goleadores-container bg-oscuro p-5">
+    @for (topAsistidor of listAsistidores; track $index) {
+    <div class="goleador">
+        <div class="imagen">
+            <div class="imgg">
+                <img [src]="topAsistidor.imageUrl" alt="{{topAsistidor.name}}">
+            </div>
+            <div class="overlay">
+                <div class="info">
+                    <h2>{{topAsistidor.name}}</h2>
+                    <hr>
+                    <p><span class="material-icons">home</span>{{topAsistidor.team}}</p>
+                    <p><span class="material-icons">my_location</span>{{topAsistidor.totalAsistencias}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+</div>
